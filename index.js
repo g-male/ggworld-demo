@@ -13,26 +13,24 @@ setInterval(function(){
 
 
 // qUOTES ROTATE
-let quotes = ['The worlds we live in are often in direct conflict with our core beliefs. <br> To protect ourselves and others, we invent universes where our dreams can be true and we can safely be our selves. <br>World-building is self-care. <br> -Yancey Strickler',
-'Only God Can Bench Us <br> - Big Body Bes'];
+let quotes = ['The worlds we live in are often in direct conflict with our core beliefs. <br> To protect ourselves and others, we invent universes where our dreams can be true and we can safely be our selves. <br>World-building is self-care. <br> -Yancey Strickler'];
 
 let quoteblock = document.getElementById('quoteblock');
 
 setInterval(function(){
-  let random = Math.floor(Math.random() * 2);
+  let random = Math.floor(Math.random() * 1);
   quoteblock.innerHTML = quotes[random];
 },
 10000)
 
 
 // qUOTES ROTATE MOBILE
-let quotesmobile = ['The worlds we live in are often in direct conflict with our core beliefs. <br> To protect ourselves and others, we invent universes where our dreams can be true and we can safely be our selves.<br> <br>World-building is self-care. <br> -Yancey Strickler',
- 'Only God Can Bench Us <br> - Big Body Bes'];
+let quotesmobile = ['The worlds we live in are often in direct conflict with our core beliefs. <br> To protect ourselves and others, we invent universes where our dreams can be true and we can safely be our selves.<br> <br>World-building is self-care. <br> -Yancey Strickler'];
 
 let quoteblockmobile = document.getElementById('quoteblock-mobile');
 
 setInterval(function(){
-  let random = Math.floor(Math.random() * 2);
+  let random = Math.floor(Math.random() * 1);
   quoteblockmobile.innerHTML = quotesmobile[random];
 },
 15000)
