@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='/style.css'>
+   
+</head>
+<body>
+<div id="mobile-content"> 
+  <h2 id="current"></h2>
+  <canvas id="globe" style=" padding: 0;margin: 0;" ></canvas>
+  <div id="star-canvas">THIS IS WHERE THE STAR CANVAS WOULD BE </div>
+
+ <div id="select-images-mobile">  </div>
+ <img id="image-rotate-mobile" src="">
+<div id="mobile-info">
+  <div class="oval"> <a>Inside</a> </div>
+  <div class="blurb"> <a> Hi, hello <br>browse through the index on the left. 
+    I provide consulting and development services for platforms, 
+    websites and tools. <br> 
+  email me him[at]gregg[dot]page
+  </a> </div>
+
+    
+    
+    <div class="ext-links"> <a>[ <a>Github</a> --<a> LinkedIn</a> -- <a>Instagram</a> ]</a> </div>
+
+  </div>
+    <div class="mid">
+
+      <label class="rocker">
+        <input type="checkbox" checked>
+        <span class="switch-left" onclick='doActionmobile()'>Off</span>
+        <span class="switch-right" onclick='doActionmobile()'>On</span>
+      </label>
+    
+    </div>
+       
+
+
+    <div class="index" id="index-table">
+        <table id="indexTable" class="tablesorter" style="width:100%">
+        <thead>
+          <tr style="height: 50px;"  style='cursor: pointer;'>
+            <td class="colour">  <div class="colour-circle" style="background-color: #ea7317;" > </div></td>
+          <th style="width:50% ">Title</th>
+          <td>Type</td> 
+          <td>Year</td>
+      
+        </tr>
+      </thead>
+    <tbody>
+            <tr class="web" onclick='loadHtml("left" , "abicsi.html")' style='cursor: pointer;'>
+              <td class="colour"> <div class="colour-circle" style="background-color: #ea7317;" > </div></td>
+              <td class="title">Abicsi</th>
+              <td class="type">Web</td>  
+              <td class="year">2022</td>
+            </tr>
+            <tr class="web" onclick='loadHtml("right" , "blog-website.html")' style='cursor: pointer;'>
+              <td class="colour"> <div class="colour-circle" style="background-color: purple;" > </div></td>
+              <td class="title">Wordpress Blog Website</th>
+              <td class="type">Web,</td>  
+              <td class="year">2022</td>
+            </tr>
+            <tr class="writing" onclick='loadHtml("right" , "abicsi.html")' style='cursor: pointer;'>
+              <td class="colour"> <div class="colour-circle" style="background-color: #8c8d;" > </div></td>
+              <td class="title">Gardening</th>
+              <td class="type">Blog, Writing</td>  
+              <td class="year">2022</td>
+            </tr>
+            
+            <tr class="music" onclick='loadHtml("right" , "www.mixcloud.com/")' style='cursor: pointer;'>
+              <td class="colour"> <div class="colour-circle" style="background-color: #ea7317;" > </div></td>
+              <td class="title">Skinny #005</th>
+              <td class="type">Music, Mix</td>  
+              <td class="year">2021</td>
+            </tr>
+            
+            <tr class="sport" onclick='loadHtml("right" , "painter-pants.html")'>
+              <td class="colour"> <div class="colour-circle" style="background-color: #8c8d;"> </div></td>
+              <td class="title">Painter Pants </td>
+              <td class="type">Sport, Design</td>
+              <td class="year">2020</td>
+            </tr>
+            <tr class="sport" onclick='loadHtml("right" , "weblayout2.html")' style='cursor: pointer;'>
+              <td class="colour"> <div class="colour-circle" style="background-color: purple;" > </div></td>
+              <td class="title">Sport Website </th>
+              <td class="type">Sport, Web</td>  
+              <td class="year">2020</td>
+            </tr>
+            <tr class="sport"  onclick='loadHtml("right" , "dg-ls.html")' style='cursor: pointer;'>
+              <td class="colour"> <div class="colour-circle" style="background-color: #ea7317;" > </div></td>
+              <td class="title">DG Longsleeve </th>
+              <td class="type">Sport, Design</td>  
+              <td class="year">2019</td>
+            </tr>
+
+            <tr class="sport"  onclick='loadHtml("right" , "summer-popup.html")' style='cursor: pointer;'>
+              <td class="colour"> <div class="colour-circle" style="background-color: #8c8d;"> </div></td>
+              <td class="title">Summer '19 Pop-up </td>
+              <td class="type">Sport, Design</td>
+              <td class="year">2019</td>
+            </tr>
+
+            <tr class="sport" onclick='loadHtml("right" , "sport-socks.html")' style='cursor: pointer;'>
+              <td class="colour"> <div class="colour-circle" style="background-color: #ea7317;" > </div></td>
+              <td class="title">Sport Socks</th>
+              <td class="type">Sport, Design</td>  
+              <td class="year">2018</td>
+            </tr>
+
+            <tr class="sport" onclick='loadHtml("right" , "Comfortable-speed.html")' style='cursor: pointer;'>
+              <td class="colour"> <div class="colour-circle" style="background-color: #2a9ae6;"> </div></td>
+              <td class="title">Comfortable Speed</td>
+              <td class="type">Sport, Design</td>
+              <td class="year">2018</td>
+            </tr>
+            <tr class="sport" onclick='loadHtml("right" , "friends-family.html")' style='cursor: pointer;'>
+              <td class="colour"> <div class="colour-circle" style="background-color: purple;"> </div></td>
+              <td class="title">Friends & Family</td>
+              <td class="type">Sport, Design</td>
+              <td class="year">2018</td>
+            </tr>
+
+           
+            <tr class="sport" onclick='loadHtml("right" , "painter-pants.html")' style='cursor: pointer;'>
+              <td class="colour"> <div class="colour-circle" style="background-color: #8c8d;"> </div></td>
+              <td class="title">Tie Dye Painter </td>
+              <td class="type">Sport, Design</td>
+              <td class="year">2021</td>
+            </tr>
+
+            <tr class="writing">
+              <td class="colour"> <div class="colour-circle" style="background-color: #2a9ae6;"> </div></td>
+              <td class="title">Gardening</td>
+              <td class="type">Writing, Blog</td>
+              <td class="year">2021</td>
+            </tr>
+            <tr class="music">
+              <td class="colour"> <div class="colour-circle" style="background-color: purple;"> </div></td>
+              <td class="title">Skinny #005</td>
+              <td class="type">Music, Mix</td>
+              <td class="year">2022</td>
+            </tr>
+
+            <tr onclick='loadHtml("right" , "abicsi.html")' style='cursor: pointer;'>
+              <td class="colour"> <div class="colour-circle" style="background-color: #ea7317;" > </div></td>
+              <td class="title">Abicsi</th>
+              <td class="type">Website</td>  
+              <td class="year">2022</td>
+            </tr>
+
+            <tr onclick='loadHtml("right" , "painter-pants.html")'>
+              <td class="colour"> <div class="colour-circle" style="background-color: #8c8d;"> </div></td>
+              <td class="title">Tie Dye Painter </td>
+              <td class="type">Sport, Design</td>
+              <td class="year">2021</td>
+            </tr>
+
+            <tr>
+              <td class="colour"> <div class="colour-circle" style="background-color: #2a9ae6;"> </div></td>
+              <td class="title">Gardening</td>
+              <td class="type">Writing, Blog</td>
+              <td class="year">2021</td>
+            </tr>
+            <tr>
+              <td class="colour"> <div class="colour-circle" style="background-color: purple;"> </div></td>
+              <td class="title">Skinny #005</td>
+              <td class="type">Music, Mix</td>
+              <td class="year">2022</td>
+            </tr>
+
+            <tr onclick='loadHtml("right" , "abicsi.html")' style='cursor: pointer;'>
+              <td class="colour"> <div class="colour-circle" style="background-color: #ea7317;" > </div></td>
+              <td class="title">Abicsi</th>
+              <td class="type">Website</td>  
+              <td class="year">2022</td>
+            </tr>
+
+            <tr onclick='loadHtml("right" , "painter-pants.html")'>
+              <td class="colour"> <div class="colour-circle" style="background-color: #8c8d;"> </div></td>
+              <td class="title">Tie Dye Painter </td>
+              <td class="type">Sport, Design</td>
+              <td class="year">2021</td>
+            </tr>
+          </tbody>
+          </table>
+        </div>
+    </div>
+
+  </div>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://unpkg.com/topojson-client@2"></script>
+<script src="versor.js"></script>
+<script src="/canvas2.js"> </script>
+<script src="/star.js"> </script>
+
+
+<script type="text/javascript" src="/index.js"> </script>
+<script type="text/javascript" src="/template.js"> </script>
+
+</body>
+</html>

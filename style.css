@@ -1,0 +1,1077 @@
+html, body{
+ margin: 0;   
+ width: 100%;
+ height: 100%;
+ background-color: #FFFFF0;
+ overflow: hidden;
+
+ animation: fadein 3s;
+ -moz-animation: fadein 3s; /* Firefox */
+ -webkit-animation: fadein 3s; /* Safari and Chrome */
+ -o-animation: fadein s; /* Opera */
+
+}
+html {
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    font-size: 100%;
+  }
+
+/**
+ * @license
+ *
+ * Font Family: Gambarino
+ * Designed by: Théo Guillard
+ * URL: https://www.fontshare.com/fonts/gambarino
+ * © 2022 Indian Type Foundry
+ *
+ * Font Style:
+ * Gambarino Regular
+ *
+*/
+
+
+@import url('gambarino.css');
+
+
+@import url('sentient.css');
+@import url('erode.css');
+@import url('erode.css');
+@import url('poppins.css');
+
+
+.main{
+  overflow:hidden;
+    height: 100%;
+    width: 100%;
+}
+.bg-container{
+  
+  background: url("/images/sky1.jpg") repeat-x;
+  height: 1333px;
+  width: 5076px;
+
+}
+
+@keyframes slide{
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1692px, 0, 0);
+  }
+}
+#desktop-left{
+  width: 100%;
+  height: 100%;
+}
+td{
+  color: #0C1618;
+
+}
+tbody.tr{
+  margin-left: 5%;
+}
+.handmade{
+  width: 95%;
+  margin: 0 auto;
+  font-family: 'Gambarino-Regular';
+  font-size: 1.3rem;
+  bottom: 1;
+}
+
+#test p {
+  margin-top: 25px;
+  font-size: 21px;
+  text-align: center;
+ 
+}
+
+
+thead th  {
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+thead th.up {
+  padding-right: 20px;
+  background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjI8Bya2wnINUMopZAQA7);
+}
+thead th.down {
+  padding-right: 20px;
+  background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjB+gC+jP2ptn0WskLQA7);
+}
+
+
+thead td  {
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+thead td.down {
+  padding-right: 20px;
+  background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjB+gC+jP2ptn0WskLQA7);
+
+}
+thead td.up {
+  padding-right: 20px;
+  background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjI8Bya2wnINUMopZAQA7);
+
+}
+#left{
+    display:inline-block;
+  /*background: radial-gradient(#e66465, #9198e5); 
+  background: radial-gradient(, ,  );*/
+  
+
+  /* A gradient at the center of its container,
+   starting red, changing to blue, and finishing green */
+ overflow-y: auto;
+  
+    width:50%;
+    height:99.9999%;}
+
+.left{
+/*  background: radial-gradient(circle at center, #9198e5 60px, #FFFFF0 100px);
+background: radial-gradient(#9198e5 30px  , #FFFFF0 80px );*/
+background-size:100%;
+
+ 
+animation:change 8s  infinite ;
+
+
+background-position: 50%, 50%;
+animation-timing-function: ease-in-out;
+
+
+background-repeat: no-repeat;
+}
+
+@keyframes change{
+  0% {
+    background-size: 100% ;
+    
+  }
+  50%{
+    background-size: 300% ;
+  }
+  100%{
+    background-size: 100%;
+  }
+  }
+  
+
+#right{
+  width:50%;
+  height:99.9999%;
+  float: right;
+    
+  overflow-y: auto;
+
+border-left: dotted black 2px;
+
+    }
+
+    @keyframes fadein {
+      from {
+          opacity:0;
+      }
+      to {
+          opacity:1;
+      }
+    }
+    @-moz-keyframes fadein { /* Firefox */
+      from {
+          opacity:0;
+      }
+      to {
+          opacity:1;
+      }
+    }
+    @-webkit-keyframes fadein { /* Safari and Chrome */
+      from {
+          opacity:0;
+      }
+      to {
+          opacity:1;
+      }
+    }
+    @-o-keyframes fadein { /* Opera */
+      from {
+          opacity:0;
+      }
+      to {
+          opacity: 1;
+      }
+    }
+    
+    #mobile-content{
+      display: none;
+    }
+    .colour{
+        width: 5%;
+    }
+    .colour-circle{
+        height: 25px;
+        width: 25px;
+        
+        border-radius: 50%;
+        display: inline-block;
+    }
+    #select-images{
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      display: none;
+ position: relative;
+ text-align: center;
+ background: radial-gradient(2px 2px, white, blue);
+ background-size: 4px 4px;
+
+    }
+#mobile-info{
+  display: none;
+}
+  
+    #image-rotate{
+  
+      box-shadow: 10px 10px black;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      
+     
+
+      display: block;
+      max-width:500px;
+      max-height:500px;
+      width: auto;
+      height: auto;
+    }
+    .tumblr-link + #select-images:hover  {
+  display: inline-block;
+}
+.tumblr-link{
+  font-size: 4rem;
+
+}
+.worldbuilding{
+  width: 100%;
+  height: 100%;
+  display: block;
+
+
+
+text-align: center;
+
+}
+#rotate-quote{
+    display: none;
+    width: 100%;
+  height: 100%;
+}
+#quoteblock{
+margin-top: 850px;
+ font-size: 2vw;
+display: block;
+  margin: 0 auto;
+width: 45%;
+height: 70%;
+
+
+position: absolute;
+top: 50%;
+left: 25%;
+transform: translate(-50%, -25%);
+}
+
+
+#rotate-quote-mobile{
+  display: none;
+}
+
+
+th{
+    text-align: left;
+    padding-left: 15px;
+}
+
+.table-heading{
+font-size: 2.3rem;
+font-weight: 500;
+font-family: 'Gambarino-Regular';
+}
+
+.title{
+  font-size: 2.3vw;
+ 
+padding-left: 25px;
+}
+.type{
+  font-size: 1.3rem;
+
+ border: transparent solid 1px;
+  border-radius: 80%;
+  width: 50px;
+  height:50px;
+  text-align: center;
+  padding-left: 0px;
+  
+}
+.styletype{
+  padding-left: 10px;
+}
+td.typecircle{
+  text-align: center;
+}
+.year{
+  font-size: 1.3rem;
+font-weight: 600;
+text-align: center;
+}
+a.type {
+  text-align: center;
+padding-top: 12px;
+margin-right: 0%;
+}
+
+.table-heading.type{
+  font-weight: 600;
+}
+
+.type.Web{
+background-color:#529E7D ;
+
+}
+.type.sport{
+  background-color: #FCC511;
+}
+.type.Blog{
+  background-color: #315CA7;
+}
+
+tr{
+ height: 70px;
+ border-collapse:collapse;
+ 
+    }
+    tr a{
+     
+    }
+    td{
+      font-family: 'Gambarino-Regular';
+     
+    }
+td a{
+  display: block;
+  text-decoration: none;
+  color: black;
+
+}
+tr:hover{
+  opacity: 50%;
+}
+ tr.sport:hover{
+  color: #8c8d;
+ }   
+ tr.web:hover{
+  color: #ea7317;
+ }  
+ 
+ tr.writing:hover{
+  color:  #2a9ae6;
+ }  
+ tr.music:hover{
+  color: purple;
+ }  
+
+
+.spotify-last{
+  
+    border-bottom: dotted black 2px;
+}
+
+
+.oval{
+    border: #000000 solid 1px;
+    border-radius: 65%;
+    width: 90%;
+    height: 75px;
+margin: 0 auto;
+margin-top: 2%;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.oval a{
+  flex:  10  10 ;
+color: #000000;
+font-size: 1rem;
+}
+
+.inside-oval{
+
+  text-align: center;
+}
+#timedesktop{
+  font-size: 2vw;
+}
+#datedesktop{
+  font-size: 2vw;
+}
+.line-break{
+  width: 100%;
+}
+.blurb{
+ 
+ 
+margin: 0 auto;
+    width: 80%;
+    padding-top: 3%;
+    padding-bottom: 3% ;
+}
+.blurb a{
+    font-size: 2.5vw;
+    font-family: 'Poppins-Regular';
+    font-weight: 500;
+  
+}
+.blurb a::selection {
+  color: #2a9ae6;
+
+}
+.ext-links{
+   margin: 0 auto;
+width: 400px;
+text-align: center;
+
+}
+.ext-links a{
+  font-size: 1.5rem;
+}
+.ext-links a:hover{
+    text-decoration: underline;
+}
+.switch{
+    margin: 0 auto;
+    
+    width: 10%;
+}
+
+
+.star-canvas{
+    display: none;
+}
+
+  #star-canvas{
+  display: none;
+}
+
+#globe{
+  display: none;
+  width: 390;
+  height:420;
+  margin-right: none;
+  visibility: visible;
+  cursor: crosshair;
+}
+
+#rotatingGlobe{
+
+  display: none;
+  visibility: visible;
+  margin: 0 auto;
+  
+  
+  position: absolute;
+top: 35%;
+left: 27%;
+transform: translate(-50%, -25%);
+
+  width: 480px; 
+  height: 480px; 
+  cursor: move;
+  overflow-y: hidden;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin:0;
+    padding:0;
+  }
+  #mid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:1em;
+   
+    
+  }
+  
+
+  /* DROP DOWN
+  !!
+  !!
+  !!
+   */
+
+   .dropdown {
+    text-align: center;
+     display: block;
+ width: 75%;
+ 
+ 
+ margin: 0 auto;
+ margin-top: 3%;
+   }
+   
+
+   .showMore {
+    font-size: 14px;
+    display: inline-block;
+  
+    cursor: pointer;
+  }
+  .moreContent{
+    display: block;
+  }
+  .moreContent a{
+display: inline-block;
+text-align: left;
+text-decoration: none;
+color: #000000;
+  }
+  .showMore + input {
+   display:none;
+  }
+  .showMore + input + * {
+   
+    max-height: 0;
+    /*and eventually delay an overflow:auto; */
+    overflow:hidden;
+    transition: max-height 0.5s, overflow 0s;
+  }
+  .showMore + input:checked + * { 
+    /* here comes the compromise, set a max-height that would for your usual contents*/
+     max-height: 5em;
+    overflow:hidden;
+    transition: max-height 0.5s, overflow 0.5s 0.5s;
+  }
+
+
+
+  .dropbtn {
+   
+    color: black;
+    background-color: #FFFFF0 !important; 
+    font-size: 1.5vw;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+text-decoration: underline;
+  }
+  
+ 
+  .dropdown-content {
+    display: none;
+    position: relative;
+    
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {text-decoration: underline;}
+  
+  .show {display: block;}
+
+  .arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+  /* DEVICE RESPONSIVE DESIGN 
+  !!
+  !!
+  !!
+   */
+   @media only screen and (max-width: 600px) {
+    #right{
+  display: none;
+}
+
+    #left{
+      width: 100%;
+    }
+#time{
+  font-size: 5vw;
+}
+#date{
+  font-size: 5vw;
+  
+}
+    left{
+      background: radial-gradient(#9198e5 5%, #FFFFF0 10%, #FFFFF0 80%);
+      
+    background-size:100%;
+    background-position: center;
+    animation:change 8s  infinite ;
+    background-repeat: no-repeat;
+    }
+    
+    @keyframes change{
+    0% {
+      background-size: 100% ;
+    }
+    50%{
+      background-size: 200%;
+    }
+    100%{
+      background-size: 100%;
+    }
+    }
+    html, body{
+      overflow-x: hidden;
+      width: 100%;
+    }
+    
+#mobile-content{
+  display: block;
+  width: 100%;
+  height: 100%;
+
+}
+.handmade{
+  width: 95%;
+  margin: 0 auto;
+  font-family: 'Gambarino-Regular';
+  font-size: 1.3rem;
+}
+
+#mobile-info{
+  display: block;
+  border-bottom: dotted black 2px;
+  padding-bottom: 5px;
+}
+.index{
+  display: none;
+}
+
+
+    .blurb{
+      text-align: left;
+     width: 90%;
+  }
+  .blurb a{
+      font-size: 5.5vw;
+  }
+
+  tr{
+    height: 50px;
+  
+       }
+    td{
+      padding-left: 0px;
+    }
+    .title{
+      padding-left: 18px;
+    }
+    td.styletype{
+  padding-left: 7px;
+    }
+    th{
+      padding-left: 8px;
+    }
+  td a{
+    color: #0C1618;
+
+  }
+  td.table-heading{
+    text-align: center;
+    padding-right: 4px;
+  }
+  td.title{
+    width: 70%;
+  }
+  td.year{
+    text-align: center;
+    padding-right: 7px;
+  }
+  td.type{
+    text-align: center;
+   
+    width: 60px;
+
+  }
+
+  .dropbtn {
+   
+   
+    font-size: 4vw;
+
+  }
+  
+
+  .showMore {
+    font-size: 14px;
+    display: inline-block;
+  
+    cursor: pointer;
+  }
+  .moreContent a{
+
+text-align: left;
+  }
+  .showMore + input {
+   display:none;
+  }
+  .showMore + input + * {
+   
+    max-height: 0;
+    /*and eventually delay an overflow:auto; */
+    overflow:hidden;
+    transition: max-height 0.5s, overflow 0s;
+  }
+  .showMore + input:checked + * { 
+    /* here comes the compromise, set a max-height that would for your usual contents*/
+     max-height: 5em;
+    overflow:hidden;
+    transition: max-height 0.5s, overflow 0.5s 0.5s;
+  }
+
+  .type.Web{
+ background-color:#ea7317 ;
+ 
+  }
+  .type.sport{
+    background-color: #9198e5;
+  }
+  .type.Blog{
+    background-color: #2a9ae6;
+  }
+  .colour-circle{
+
+margin: 10px;    
+  }
+#mid{
+  background: radial-gradient(#e66465, #9198e5);
+  background-size: 0px;
+
+  
+}
+#quoteblock-mobile{
+  display: block;
+
+width: 300px;
+height: 400px;
+
+font-size: 1.5rem;
+font-family: Snell Roundhand, cursive;
+position: relative;
+top: 20%;
+left: 50%;
+transform: translate(-50%, -20%);
+}
+
+thead th  {
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+thead th.up {
+  padding-right: 20px;
+  background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjI8Bya2wnINUMopZAQA7);
+}
+thead th.down {
+  padding-right: 20px;
+  background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjB+gC+jP2ptn0WskLQA7);
+}
+
+
+thead td  {
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+thead td.down {
+  padding-right: 20px;
+  background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjB+gC+jP2ptn0WskLQA7);
+
+}
+thead td.up {
+  padding-right: 20px;
+  background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjI8Bya2wnINUMopZAQA7);
+
+}
+
+
+
+
+
+  .table-heading{
+    font-size: 1.5rem;
+    font-weight: 600;
+    }
+    .title{
+      font-size: 1.3rem;
+    font-weight: 400;
+    }
+    .type{
+      border: transparent solid 1px;
+      border-radius: 80%;
+      font-size: 1rem;
+    font-weight: 500;
+    width: 40px;
+    height: 40px;
+    }
+    a.type{
+      padding-top: 10px;
+    }
+    .year{
+      font-size: 0.9rem;
+    font-weight: 500;
+    }
+
+    #rotatingGlobe{
+      display: none;
+      width: 300px;
+      height:300px;
+  
+      visibility: visible;
+    
+overflow-x: hidden;
+
+
+      top: 35%;
+  left: 22%;
+      transform: translate(0, 0);
+      
+    }
+    #current{
+      visibility: visible;
+      font-size: 1rem;
+      cursor: crosshair;
+    }
+    #globemobile{
+      display: none;
+    }
+    #select-images-mobile{
+      width: 100%;
+      height: 99%;
+      margin: 0 auto;
+      display: none;
+ position: relative;
+padding-top: 5%;
+ text-align: center;
+ background: radial-gradient(2px 2px, white, blue);
+ background-size: 4px 4px;
+
+ overflow-y: hidden;
+
+    }
+    .tumblr-link{
+
+    
+      font-size: 2rem;
+    
+    }
+    .ext-links{
+      width: 100%;
+      display: inline-block;
+    }
+    .ext-links{
+      width: 100%;
+      display: inline-block;
+    }
+    .ext-links a{
+      font-size: 1.1rem;
+    }
+    #image-rotate-mobile{
+      width: 80%;
+      box-shadow: 10px 10px;
+      margin: 0;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      
+     }
+     #desktop-left{
+      visibility: hidden;
+      width: 0;
+      height: 0;
+      margin: 0;
+      padding: 0;
+     }
+
+
+   }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Switch starts here */
+  .rocker {
+    display: inline-block;
+    position: relative;
+    /*
+    SIZE OF SWITCH
+    ==============
+    All sizes are in em - therefore
+    changing the font-size here
+    will change the size of the switch.
+    See .rocker-small below as example.
+    */
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #888;
+    width: 7em;
+    height: 4em;
+    overflow: hidden;
+    border-bottom: 0.5em solid #eee;
+  }
+  
+
+  
+  .rocker::before {
+    content: "";
+    position: absolute;
+    top: 0.5em;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #999;
+    border: 0.5em solid #eee;
+    border-bottom: 0;
+  }
+  
+  .rocker input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .switch-left,
+  .switch-right {
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5em;
+    width: 3em;
+    transition: 0.2s;
+  }
+  
+  .switch-left {
+    height: 2.4em;
+    width: 2.75em;
+    left: 0.85em;
+    bottom: 0.4em;
+    background-color: #ddd;
+    transform: rotate(15deg) skewX(15deg);
+  }
+  
+  .switch-right {
+    right: 0.5em;
+    bottom: 0;
+    background-color: green;
+    color: #fff;
+  }
+  
+  .switch-left::before,
+  .switch-right::before {
+    content: "";
+    position: absolute;
+    width: 0.4em;
+    height: 2.45em;
+    bottom: -0.45em;
+    background-color: #ccc;
+    transform: skewY(-65deg);
+  }
+  
+  .switch-left::before {
+    left: -0.4em;
+  }
+  
+  .switch-right::before {
+    right: -0.375em;
+    background-color: transparent;
+    transform: skewY(65deg);
+  }
+  
+  input:checked + .switch-left {
+    background-color: red;
+    color: #fff;
+    bottom: 0px;
+    left: 0.5em;
+    height: 2.5em;
+    width: 3em;
+    transform: rotate(0deg) skewX(0deg);
+  }
+  
+  input:checked + .switch-left::before {
+    background-color: transparent;
+    width: 3.0833em;
+  }
+  
+  input:checked + .switch-left + .switch-right {
+    background-color: #ddd;
+    color: #888;
+    bottom: 0.4em;
+    right: 0.8em;
+    height: 2.4em;
+    width: 2.75em;
+    transform: rotate(-15deg) skewX(-15deg);
+  }
+  
+  input:checked + .switch-left + .switch-right::before {
+    background-color: #ccc;
+  }
+  
+  /* Keyboard Users */
+  input:focus + .switch-left {
+    color: #333;
+  }
+  
+  input:checked:focus + .switch-left {
+    color: #fff;
+  }
+  
+  input:focus + .switch-left + .switch-right {
+    color: #fff;
+  }
+  
+  input:checked:focus + .switch-left + .switch-right {
+    color: #333;
+  }

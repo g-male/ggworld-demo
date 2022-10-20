@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>G-G.world</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/template.css'>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+   <!--  choose a theme file -->
+
+<!-- load jQuery and tablesorter scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="/tablesorter-master/dist/js/jquery.tablesorter.js"></script>
+</head>
+<body>
+ 
+    <div class="main">
+
+        <div id="left" class="split left" >
+          <div id="desktop-left"> 
+         
+           <canvas id='rotatingGlobe' width='480px' height='480px'></canvas>
+
+       <!--  <canvas id="globe" style=" padding: 0;margin: 0;" ></canvas>-->
+         
+
+         <div id="select-images"><img id="image-rotate" src=""> <br> <a class="tumblr-link">cameraroll.exchange</a> </div>
+         <div class="worldbuilding" id="rotate-quote"> <a id="quoteblock"> </a>
+  </div>
+<div class="index" id="index-table">
+  
+            <table id="indexTable" class="tablesorter" style="width:100%">
+            <thead>
+              <tr style="height: 50px;"  style='cursor: pointer;'>
+       
+              <th class="table-heading" style="width:70% ">Title</th>
+              <td class="table-heading type" style="width:10% ">Type</td> 
+              <td class="table-heading year">Year</td>
+          
+            </tr>
+          </thead>
+        <tbody>
+          <tr class="writing" onclick='loadHtml("right" , "abicsi.html")' style='cursor: pointer;'>
+             
+            <td class="title">Pilot</th>
+            <td class="styletype"> <a class="type Blog">Blog</a></td>  
+            <td class="year">2022</td>
+          </tr>
+ 
+          <tr class="web" onclick='loadHtml("left" , "personal-website.html")' style='cursor: pointer;'>
+
+            <td class="title">Personal Website</th>
+            <td class="styletype"> <a class="type Web">Web </a></td>  
+            <td class="year">2022</td>
+          </tr>
+                <tr class="web" onclick='loadHtml("left" , "abicsi.html")' style='cursor: pointer;'>
+        
+                  <td class="title">Abicsi</th>
+                  <td class="styletype"> <a class="type Web">Web </a></td>  
+                  <td class="year">2022</td>
+                </tr>
+                <tr class="web" onclick='loadHtml("right" , "blog-website.html")' style='cursor: pointer;'>
+               
+                  <td class="title">Wordpress Blog</th>
+                  <td class="styletype"> <a class="type Web">Web </a></td>  
+                  <td class="year">2022</td>
+                </tr>
+            
+                
+                <tr class="sport" onclick='loadHtml("right" , "painter-pants.html")' style='cursor: pointer;'>
+   
+                  <td class="title">Painter Pants </td>
+                  <td class="styletype"> <a class="type sport">Sport</a></td>
+                  <td class="year">2020</td>
+                </tr>
+                <tr class="sport" onclick='loadHtml("right" , "sport-website.html")' style='cursor: pointer;'>
+            
+                  <td class="title">Sport Website </th>
+                  <td class="styletype"> <a class="type Web">Web </a></td>  
+                  <td class="year">2020</td>
+                </tr>
+                <tr class="sport"  onclick='loadHtml("right" , "dg-ls.html")' style='cursor: pointer;'>
+    
+                  <td class="title">DG Longsleeve </th>
+                  <td class="styletype" > <a class="type sport">Sport</a></td>  
+                  <td class="year">2019</td>
+                </tr>
+
+                <tr class="sport"  onclick='loadHtml("right" , "summer-popup.html")' style='cursor: pointer;'>
+ 
+                  <td class="title">Summer '19 Pop-up </td>
+                  <td class="styletype"> <a class="type sport">Sport </a> </td>
+                  <td class="year">2019</td>
+                </tr>
+
+                <tr class="sport" onclick='loadHtml("right" , "sport-socks.html")' style='cursor: pointer;'>
+    
+                  <td class="title">Sport Socks</th>
+                  <td class="styletype"> <a class="type sport">Sport </a></td>  
+                  <td class="year">2018</td>
+                </tr>
+
+                <tr class="sport" onclick='loadHtml("right" , "Comfortable-speed.html")' style='cursor: pointer;'>
+  
+                  <td class="title">Comfortable Speed</td>
+                  <td class="styletype"> <a class="type sport">Sport </a></td>
+                  <td class="year">2018</td>
+                </tr>
+                <tr class="sport" onclick='loadHtml("right" , "friends-family.html")' style='cursor: pointer;'>
+      
+                  <td class="title">Friends & Family</td>
+                  <td class="styletype"> <a class="type sport">Sport </a></td>
+                  <td class="year">2018</td>
+                </tr>
+
+               
+              </tbody>
+              </table>
+            </div>
+          </div>
+         
+            <div id="mobile-content"> 
+              
+
+            <div id="mobile-info">
+              <div class="oval"> <a class="inside-oval" id="date"></a> 
+             
+                <a class="inside-oval" id="time">  </a> 
+              
+              </div>
+              
+              <div class="blurb">  <a> Hi, Hello. <br> I provide design and development solutions for people, platforms and businesses.
+                <label class="showMore" for="_1">[...]</label>
+                <input id="_1" type="checkbox">
+                <div class="moreContent" style="font-size:4vw; "> Currently interested in building web systems from scratch, digital archiving and the decentralized web. 
+              
+                  <br> Open for work, collaboration or a conversation. </div> 
+
+                <br>him@greg-g[dot]world 
+                <br> Based in Toronto & Online &#128205
+               
+                </a> 
+               </div>
+            
+               <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">MORE</button>
+                <div id="myDropdown" class="dropdown-content">
+                  
+                  <a href="#about">GitHub</a>
+                  <a href="#home">Request Resume</a>
+                  <a href="https://www.instagram.com/skinny.reggae/">Instagram</a>
+                </div>
+              </div>
+                </div>
+                
+           
+                <div id="mid">
+            
+                  <label class="rocker">
+                    <input type="checkbox" checked>
+                    <span class="switch-left" onclick='doActionmobile()'>Off</span>
+                    <span class="switch-right" onclick='doActionmobile()'>On</span>
+                  </label>
+                
+                </div>
+               
+
+            <!--    <canvas id="globemobile" style=" padding: 0;margin: 0;" ></canvas>   -->
+
+               <div id="select-images-mobile"> <a class="tumblr-link">cameraroll.exchange</a>    <img id="image-rotate-mobile" src=""></div>
+              
+               <div class="worldbuilding" id="rotate-quote-mobile"> <a id="quoteblock-mobile"> </a>
+               </div>
+            
+            
+                <div class="mobile-index" id="index-table-mobile">
+                    <table id="indexTableMobile" class="tablesorter" style="width:100%">
+                    <thead>
+                      <tr style="height: 50px;"  style='cursor: pointer;'>
+                
+                      <th class="table-heading" style="width:10%">Title</th>
+                      <td class="table-heading"  >Type</td> 
+                      <td class="table-heading">Year</td>
+                  
+                    </tr>
+                  </thead>
+                <tbody>
+                  <tr class="writing" onclick='loadHtml("right" , "abicsi.html")' style='cursor: pointer;'>
+                       
+                    <td class="title">Pilot</th>
+                    <td class="styletype"> <a class="type Blog">Blog </a></td>  
+                    <td class="year">2022</td>
+                  </tr>
+                  
+                  <tr class="web"  style='cursor: pointer;'>
+      
+                    <td class="title"><a href="/templates/personal-website.html"> Personal Website </a></th>
+                    <td class="styletype"> <a class="type Web" href="/templates/personal-website.html">Web </a></td>  
+                    <td class="year"> <a href="/templates/personal-website.html">2022 </a></td>
+                  </tr>
+                        <tr class="web"  style='cursor: pointer;'>
+              
+                          <td class="title"><a href="/templates/abicsi.html"> Abicsi </a></th>
+                          <td class="styletype"> <a class="type Web" href="/templates/abicsi.html">Web</a></td>  
+                          <td class="year"> <a href="/templates/abicsi.html">2022 </a></td>
+                        </tr>
+                        <tr class="web" style='cursor: pointer;'>
+              
+                          <td class="title"> <a href="/templates/blog-website.html">Wordpress Blog </a></th>
+                          <td class="styletype"> <a class="type Web" href="/templates/blog-website.html">Web</a></td>  
+                          <td class="year"><a href="/templates/blog-website.html"> 2022</a></td>
+                        </tr>
+                    
+                   
+                        <tr class="sport">
+          
+                          <td class="title"><a href="templates/painter-pants.html">Painter Pants</a> </td>
+                          <td class="styletype" > <a href="/templates/painter-pants.html" class="type sport"> Sport </a></td>
+                          <td class="year"><a href="templates/painter-pants.html"> 2020 </a></td>
+                        </tr>
+                        <tr class="web" onclick='loadHtml("right" , "weblayout2.html")' style='cursor: pointer;'>
+                         
+                          <td class="title"> <a href="/templates/sport-website.html">Sport Website </a></th>
+                          <td class="styletype"> <a href="/templates/sport-website.html" class="type Web">Web </a></td>  
+                          <td class="year"> <a href="/templates/painter-pants.html">2020</a></td>
+                        </tr>
+                        <tr class="sport"  style='cursor: pointer;'>
+                     
+                          <td class="title"><a href="/templates/dg-ls.html"> DG Longsleeve</a> </th>
+                          <td class="styletype"> <a class="type sport" href="/templates/dg-ls.html"> Sport</a></td>  
+                          <td class="year"> <a href="/templates/dg-ls.html">2019 </a></td>
+                        </tr>
+            
+                        <tr class="sport"   style='cursor: pointer;'>
+                        
+                          <td class="title"> <a href="/templates/summer-popup.html">Summer '19 Pop-up</a> </td>
+                          <td class="styletype"> <a href="/templates/summer-popup.html" class="type sport"> Sport</a></td>
+                          <td class="year"><a href="/templates/summer-popup.html">2019</a></td>
+                        </tr>
+            
+                        <tr class="sport" style='cursor: pointer;'>
+                       
+                          <td class="title"> <a href="/templates/sport-socks.html">Sport Socks</a></th>
+                          <td class="styletype" > <a  href="/templates/sport-socks.html" class="type sport">Sport</a></td>  
+                          <td class="year"><a href="/templates/sport-socks.html"></a> 2018</td>
+                        </tr>
+            
+                        <tr class="sport" onclick='loadHtml("right" , "Comfortable-speed.html")' style='cursor: pointer;'>
+            
+                          <td class="title"> <a href="/templates/comfortable-speed.html"> Comfortable Speed</a></td>
+                          <td class="styletype"> <a href="/templates/comfortable-speed.html" class="type sport">Sport</a></td>
+                          <td class="year"> <a href="/templates/comfortable-speed.html"> 2018</a></td>
+                        </tr>
+                        <tr class="sport"  style='cursor: pointer;'>
+                     
+                          <td class="title"> <a href="/templates/friends-family.html">Friends & Family</a></td>
+                          <td class="styletype"> <a href="/templates/friends-family.html" class="type sport">Sport</a></td>
+                          <td class="year"> <a href="/templates/friends-family.html"> 2018 </a></td>
+                        </tr>
+            
+                       
+                
+            
+                      </tbody>
+                      </table>
+                    </div>
+                </div>
+            
+              </div>
+
+            
+        
+        <div id="right" class="split loader">
+
+          <div class="oval">
+             <a class="inside-oval" id="datedesktop"> </a> 
+             
+            <a class="inside-oval" id="timedesktop">  </a> 
+          
+          </div>
+          
+          <div class="blurb">  <a> Hi, Hello. <br> 
+         
+       I provide design and development solutions for people, platforms and businesses.
+           
+        
+        <span style="font-size:1.5vw"> <br>Currently interested in building web systems from scratch, digital archiving and the decentralized web. </span> 
+          <br>     <span style="font-size:1.5vw">Open for work, collaboration or a conversation. </span>
+          <br>him@greg-g[dot]world 
+          <br> Based in Toronto & Online &#128205
+          </a>  </div>
+
+        
+            <p class="spotify-last"><a></a></p>
+            
+            <div id="mid">
+
+              <label class="rocker">
+                <input type="checkbox" checked>
+                <span class="switch-left" onclick='doAction()'>Off</span>
+                <span class="switch-right" onclick='doAction()'>On</span>
+              </label>
+            
+            </div>
+            <div class="dropdown">
+            <label class="showMore" for="_2">+++</label>
+            <input id="_2" type="checkbox">
+            <div class="moreContent" style="font-size:1.5vw; "> 
+              <a target="_blank" href="#about">[GitHub]</a> -  <a href="#home">[Request Resume]</a> - <a target="_blank" href="https://www.instagram.com/skinny.reggae/">[Instagram]</a>
+            </div> 
+          </div>
+
+        
+      </div>
+    
+      <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://unpkg.com/topojson-client@2"></script>
+    <script src="versor.js"></script>
+   
+
+ 
+      <script type='text/javascript' src='http://d3js.org/d3.v3.min.js'></script>
+      <script type='text/javascript' src='http://d3js.org/topojson.v1.min.js'></script>
+      <script type='text/javascript' src='/planetaryjs.min.js'></script>
+
+  
+     
+      <script type='text/javascript' src='/newglobe.js'></script>
+      <script type="text/javascript" src="/imgrotatemobile.js"> </script>
+      <script type="text/javascript" src="/index.js"> </script>
+      <script type="text/javascript" src="/template.js"> </script>
+
+</body>
+</html>

@@ -1,0 +1,238 @@
+header{
+position: fixed;
+z-index: 9999;
+}
+
+#full-image{
+    width: 100%;
+   
+display: block;
+}
+#full-image-me{
+    display: none;
+    width: 90%;
+}
+.full-width-image{
+    width: 100%;
+    padding: 2%;
+    filter: drop-shadow(16px 16px 10px black);
+}
+
+.oval-back{
+    border: #000000 solid 1px;
+    border-radius: 65%;
+    width: 90%;
+    height: 75px;
+margin: 0 auto;
+margin-top: 2%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.oval-back a{
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    color: #000000;
+}
+
+.oval-back.desktop{z-index: 999;}
+a.oval-back{
+ flex: 0 0 ;
+}
+.oval-back{
+    font-size: 3vw;
+}
+.oval-back:hover{
+    background: #d594fa;
+}
+.oval-back.mobile{
+display: none;
+}
+a.oval-back.mobile{
+    display: block;
+}
+.return-button{
+    border-bottom: 2px solid black;
+    width: 100%;
+    padding: 1%;
+    padding: 1%;
+
+}
+
+  header{
+    position: absolute;
+  width: 50%;
+  display: inline-block;
+  }
+.main-section{
+    width: 100%;
+    height: 99%;
+    padding: 3% ;
+    padding-top: 80px;
+    display: inline-block;
+    overflow-y: auto;
+}
+.main-heading{
+    margin-top: 5%;
+    margin-bottom: 3%;
+    display: inline-block;
+    width: 100%;
+}
+.ls-link{
+    font-size: 0.5rem;
+}
+.main-heading h1{
+    font-size: 2.4vw;
+   
+}
+.main-heading a{
+    text-decoration: none;
+    color: #000000;
+}
+.new-tab{
+    display: none;
+}
+.main-heading:hover + .new-tab{
+    display: inline-block;
+}
+.image-container{
+    text-align: center;
+    width: 100%;
+}
+.vertical{
+    width: 33.333%;
+    display: inline-block;
+    float: left;
+   
+  
+
+}
+
+.text-box{
+    width: 100%;
+    padding-bottom: 5%;
+  display: inline-block;
+}
+.text-box a{
+    font-size: 1.5rem;
+
+}
+.text-box h2{
+    font-size: 2vw;
+}
+.text-box li{
+    font-size: 1.5vw;
+}
+
+
+.mobile-title{
+    font-size: 1.6vw;
+}
+.info-text{
+    width: 100%;
+    border: 1px solid black;
+
+}
+
+.desc-text{
+   
+    padding: 5%;
+    display: block;
+    width: 100%;
+}
+.list-desc{
+    list-style-type: circle;
+    margin-left: 4%;
+}
+.desc-text a{
+    font-size: 1.5rem;
+}
+.click-link{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+#globe {
+    cursor: move;  
+  }
+  
+  #current {
+    position: absolute;
+    color: white;
+    font-family: sans-serif;
+ 
+  }
+  
+
+  /* DEVICE RESPONSIVE DESIGN 
+  !!
+  !!
+  !!
+   */
+   @media only screen and (max-width: 600px) {
+.main-section{
+    overflow-y: auto;
+    padding-top: 100px;
+    
+}
+
+.vertical{
+    width: 49.9999%;
+    display: inline-block;
+ margin: 0 auto;
+
+}
+.text-box{
+    padding-bottom: 5%;
+}
+.text-box h2{
+    font-size: 4.5vw;
+}
+.text-box li{
+    font-size: 4vw;
+}
+.main-heading{
+    width: 100%;
+    display: block;
+}
+.main-heading h1{
+   font-size: 6.5vw;
+}
+.mobile-title{
+    font-size: 3vw;
+}
+header{
+    width: 100%;
+    padding: 3%;
+    
+}
+#theo-neon-ls{
+    display: none;
+}
+#thirdimg{
+display: none;
+}
+    .oval-back.mobile{
+        display: flex;
+        margin-bottom: 1%;
+        width: 100%;
+        font-size: 10vw;
+        }
+        a.oval-back{
+            flex: 0 0 ;
+           }
+        .oval-back.desktop{
+            display: none;
+            }
+            .oval-back.mobile a{
+                text-decoration: underline;
+                text-decoration-style: dotted;
+                color: #000000;
+            
+               
+            }
+   }
+
+  
