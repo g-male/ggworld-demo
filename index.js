@@ -199,7 +199,7 @@ $(function() {
     const imagerotate = document.getElementById('select-images');
 const mobileinfo = document.getElementById('mobile-info');
 const leftside = document.getElementById('desktop-left');
-
+const tickermobile = document.getElementById('ticker-mobile');
 const quoteblock = document.getElementById('rotate-quote');
       if (clickState ==0){
 
@@ -214,18 +214,18 @@ const quoteblock = document.getElementById('rotate-quote');
       else if (clickState ==1 ) {
 
     console.log(clickState)
-    globecanvas.style.display = 'block';
+    globecanvas.style.display = 'inline-block';
     leftside.style.overflowY = 'hidden'
     indextable.style.display = 'none';
     mobileinfo.style.display = 'none';
-   
+   tickermobile.style.display = 'none';
       } else if (clickState == 2 ) {
         leftside.style.overflowY = 'auto'
    console.log(clickState)
     globecanvas.style.display = 'none';
     indextable.style.display = 'block';
     mobileinfo.style.display = 'block';
-
+    tickermobile.style.display = 'block';
       } else if (clickState == 3 ) {
 
         console.log(clickState)
@@ -233,7 +233,7 @@ const quoteblock = document.getElementById('rotate-quote');
         imagerotate.style.display = 'block';
         indextable.style.display = 'none';
         mobileinfo.style.display = 'none';
-        
+        tickermobile.style.display = 'none';
       } else if (clickState == 4 ) {
           // Do something...
           // then reset clickState for the next go round
@@ -243,7 +243,7 @@ const quoteblock = document.getElementById('rotate-quote');
           imagerotate.style.display = 'none';
           indextable.style.display = 'block';
           mobileinfo.style.display = 'block';
-         
+          tickermobile.style.display = 'block';
         
       } 
       else if (clickState == 5 ) {
@@ -255,7 +255,7 @@ const quoteblock = document.getElementById('rotate-quote');
         imagerotate.style.display = 'none';
         indextable.style.display = 'none';
         mobileinfo.style.display = 'none';
-      
+        tickermobile.style.display = 'none';
         quoteblock.style.display = 'block';
     } 
     else if (clickState == 6 ) {
@@ -267,7 +267,7 @@ const quoteblock = document.getElementById('rotate-quote');
       imagerotate.style.display = 'none';
       indextable.style.display = 'block';
       mobileinfo.style.display = 'block';
-      
+      tickermobile.style.display = 'block';
       quoteblock.style.display = 'none';
       clickState=0;
   } 
@@ -300,7 +300,7 @@ function doActionmobile() {
   const mobileinfo = document.getElementById('mobile-info');
   const midswitch = document.getElementById('mid');
   const quoteblockmobile = document.getElementById('rotate-quote-mobile');
-  
+  const tickermobile = document.getElementById('ticker-mobile');
   const leftmobie = document.getElementById('left');
 
     if (clickStatemobile ==0){
@@ -312,17 +312,17 @@ function doActionmobile() {
       globecanvas.style.display = 'none';
       indextable.style.display = 'block';
       mobileinfo.style.display = 'block';
- 
+      tickermobile.style.display = 'block';
     }
 
     else if (clickStatemobile ==1 ) {
       midswitch.style.background = '#634627;';
       midswitch.style.backgroundSize = '0';
   console.log(clickStatemobile)
-  globecanvas.style.display = 'block';
+  globecanvas.style.display = 'inline-block';
   indextable.style.display = 'none';
   mobileinfo.style.display = 'none';
-
+  tickermobile.style.display = 'none';
   globecanvas.style.overflow = 'hidden';
     } else if (clickStatemobile == 2 ) {
       midswitch.style.background = '#634627;';
@@ -331,7 +331,7 @@ function doActionmobile() {
   globecanvas.style.display = 'none';
   indextable.style.display = 'block';
   mobileinfo.style.display = 'block';
-
+  tickermobile.style.display = 'block';
 globecanvas.style.overflow = 'auto';
     } else if (clickStatemobile == 3 ) {
 
@@ -343,7 +343,7 @@ globecanvas.style.overflow = 'auto';
       midswitch.style.backgroundSize = '4px 4px';
       indextable.style.display = 'none';
       mobileinfo.style.display = 'none';
-     
+      tickermobile.style.display = 'none';
     } else if (clickStatemobile == 4 ) {
         // Do something...
         // then reset clickState for the next go round
@@ -356,7 +356,7 @@ globecanvas.style.overflow = 'auto';
         midswitch.style.background = '#634627;';
       midswitch.style.backgroundSize = '0';
       
-     
+      tickermobile.style.display = 'block';
       
     } 
     else if (clickStatemobile == 5 ) {
@@ -368,7 +368,7 @@ globecanvas.style.overflow = 'auto';
       imagerotate.style.display = 'none';
       indextable.style.display = 'none';
       mobileinfo.style.display = 'none';
-     
+      tickermobile.style.display = 'none';
       quoteblockmobile.style.display = 'block';
   } 
   else if (clickStatemobile == 6 ) {
@@ -380,7 +380,7 @@ globecanvas.style.overflow = 'auto';
     imagerotate.style.display = 'none';
     indextable.style.display = 'block';
     mobileinfo.style.display = 'block';
-
+    tickermobile.style.display = 'block';
     quoteblockmobile.style.display = 'none';
     clickStatemobile=0;
 } 
