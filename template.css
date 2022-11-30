@@ -76,6 +76,7 @@ a.oval-back.mobile{
     position: absolute;
   width: 50%;
   display: inline-block;
+
   }
 .main-section{
     width: 100%;
@@ -86,7 +87,7 @@ a.oval-back.mobile{
     overflow-y: auto;
 }
 .main-heading{
-    margin-top: 3%;
+    
     margin-bottom: 3%;
     display: inline-block;
     width: 100%;
@@ -232,8 +233,11 @@ header{
 #thirdimg{
 display: none;
 }
+.close-x{
+    padding-right: 0;
+}
     .oval-back.mobile{
-        display: flex;
+        display: none;
         margin-bottom: 1%;
         width: 60%;
         font-size: 10vw;

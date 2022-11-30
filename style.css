@@ -438,7 +438,7 @@ th{
 
 .table-heading{
 font-size: 2.3rem;
-font-weight: 500;
+font-weight: 600;
 font-family: 'courier';
 cursor: row-resize;}
 
@@ -456,7 +456,8 @@ padding-left: 25px;
   height:50px;
   text-align: center;
   padding-left: 0px;
-  
+  font-weight: 600;
+
 }
 .styletype{
   padding-left: 10px;
@@ -465,7 +466,7 @@ td.typecircle{
   text-align: center;
 }
 .year{
-  font-size: 1.3rem;
+  font-size: 1.3vw;
 font-weight: 600;
 text-align: center;
 }
@@ -477,6 +478,7 @@ margin-right: 0%;
 
 .table-heading.type{
   font-weight: 600;
+  font-size: 1.3vw;
 }
 
 .type.Web{
@@ -578,8 +580,11 @@ margin: 0 auto;
 .blurb a{
     font-size: 2.4vw;
     font-family: helvetica;
-    font-weight: 600;
+    
   
+}
+.blurb-more{
+  font-size: 1.8vw;
 }
 .blurb a::selection {
   color: #2a9ae6;
@@ -697,13 +702,13 @@ cursor: alias;
     max-height: 0;
     /*and eventually delay an overflow:auto; */
     overflow:hidden;
-    transition: max-height 0.5s, overflow 0s;
+    transition: max-height 0.8s, overflow 0.8s;
   }
   .showMore + input:checked + * { 
     /* here comes the compromise, set a max-height that would for your usual contents*/
      max-height: 5em;
     overflow:hidden;
-    transition: max-height 0.5s, overflow 0.5s 0.5s;
+    transition: max-height 0.8s, overflow 0.8s 0.8s;
   }
 
 
@@ -719,15 +724,15 @@ cursor: alias;
     width: 50%;
 margin-left: 50%;
     overflow: hidden;
-    height: 5vh;
+    height: 4vh;
     border-top: #000000 dotted 2px;
     box-sizing: content-box;
   }
   
   .ticker-wrap .ticker {
     display: inline-block;
-    height:5vh;
-    line-height: 5vh;
+    height:4vh;
+    line-height: 4vh;
     white-space: nowrap;
     padding-right: 50%;
     box-sizing: content-box;
@@ -746,7 +751,7 @@ margin-left: 50%;
   .ticker-wrap .ticker__item {
     display: inline-block;
     padding: 0 2rem;
-    font-size: 2rem;
+    font-size: 1.3rem;
     color: black;
   font-style: italic;
   }
@@ -981,10 +986,12 @@ margin-left: 50%;
 
   }
   
-
+.showMore.one{
+  display: none;
+}
   .showMore {
     font-size: 5vw;
-    display: none;
+
   
     cursor: pointer;
   }
