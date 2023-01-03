@@ -9,9 +9,9 @@
     // (world-110m-withlakes.json) so we can render lakes.
     globe.loadPlugin(planetaryjs.plugins.earth({
       topojson: { file:   '/world-110m-withlakes.json' },
-      oceans:   { fill:   '#000080' },
-      land:     { fill:   '#339966' },
-      borders:  { stroke: '#008000' }
+      oceans:   { fill:   '#3030f3' },
+      land:     { fill:   '#028000' },
+      borders:  { stroke: '#fff1ce' }
     }));
     // Load our custom `lakes` plugin to draw lakes; see below.
     globe.loadPlugin(lakes({
@@ -58,8 +58,7 @@
       var color = colors[Math.floor(Math.random() * colors.length)];
      // globe.plugins.pings.add(lng, lat, { color: color, ttl: 2000, angle: Math.random() * 10 });
       globe.plugins.pings.add(-79.347015, 43.651070, { color: color, ttl: 2000, angle: 3 });
-      globe.plugins.pings.add(-77.893890, 18.476223, { color: color, ttl: 2000, angle: 3 });
-      globe.plugins.pings.add(-58.166666, 6.7999968, { color: color, ttl: 2000, angle: 3 });
+     
     }, 250);
   
     var canvas = document.getElementById('rotatingGlobe');

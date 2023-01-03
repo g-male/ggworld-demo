@@ -3,6 +3,21 @@ position: fixed;
 z-index: 9999;
 }
 
+* {
+    box-sizing: border-box;
+  }
+  
+  .info-row {
+    display: flex;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    flex: 50%;
+    padding: 10px;
+    
+  }
+
 #full-image{
     width: 100%;
    
@@ -135,15 +150,21 @@ font-style: italic;
 }
 .text-box a{
     font-size: 1.5rem;
-
+    font-family: Helvetica;
 }
 .text-box h2{
-    font-size: 2vw;
+    font-size: 1.7vw;
+    font-family: Helvetica;
 }
 .text-box li{
     font-size: 1.5vw;
+    
 }
-
+.text-box p{
+    font-family: Helvetica;
+    font-size: 1.5vw;
+    line-height: 3.5vh;
+}
 
 .mobile-title{
     font-size: 1.6vw;
@@ -163,6 +184,7 @@ font-style: italic;
 .list-desc{
     list-style-type: circle;
     margin-left: 4%;
+    display: none;
 }
 .desc-text a{
     font-size: 1.5rem;
@@ -203,6 +225,15 @@ font-style: italic;
  margin: 0 auto;
 
 }
+.column p{
+   font-size: 1rem;
+  }
+  .column h3{
+      font-size: 1.1rem;
+  }
+  .text-desc p{
+      font-size: 1rem;
+  }
 .text-box{
     padding-bottom: 5%;
 }

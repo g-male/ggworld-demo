@@ -1,4 +1,14 @@
 
+var toggler = document.getElementsByClassName("caret");
+var i;
+
+for (i = 0; i < toggler.length; i++) {
+  toggler[i].addEventListener("click", function() {
+    this.parentElement.querySelector(".nested").classList.toggle("active");
+    this.classList.toggle("caret-down");
+  });
+}
+
 // IMAGEROTATE
 let images = ['/images/cotty-6.jpg', '/images/friendshipandsoccer.png', '/images/barca_vs_real.jpg', '/images/liberation_of_aunt_Jemima.JPG', '/images/web-off.jpg', '/images/notting-hill-carni-1992.jpg', '/images/understand-computer.png', '/images/kobe-smile.jpg', '/images/mike-janet.jpg', '/images/prince_jumper.png'];
 
@@ -192,7 +202,7 @@ $(function() {
 
   function doAction() {
       clickState++; 
-      const starcanvas = document.getElementById('star-canvas');
+   
       const indextable = document.getElementById('index-table');
   
       const globecanvas = document.getElementById('rotatingGlobe');
@@ -200,7 +210,7 @@ $(function() {
 const mobileinfo = document.getElementById('mobile-info');
 const leftside = document.getElementById('desktop-left');
 const tickermobile = document.getElementById('ticker-mobile');
-const quoteblock = document.getElementById('rotate-quote');
+
       if (clickState ==0){
 
            
@@ -215,6 +225,7 @@ const quoteblock = document.getElementById('rotate-quote');
 
     console.log(clickState)
     globecanvas.style.display = 'inline-block';
+    imagerotate.style.display = 'block';
     leftside.style.overflowY = 'hidden'
     indextable.style.display = 'none';
     mobileinfo.style.display = 'none';
@@ -223,14 +234,15 @@ const quoteblock = document.getElementById('rotate-quote');
         leftside.style.overflowY = 'auto'
    console.log(clickState)
     globecanvas.style.display = 'none';
+    imagerotate.style.display = 'none';
     indextable.style.display = 'block';
     mobileinfo.style.display = 'block';
     tickermobile.style.display = 'block';
       } else if (clickState == 3 ) {
 
         console.log(clickState)
-        globecanvas.style.display = 'none';
-        imagerotate.style.display = 'block';
+        globecanvas.style.display = 'inline-block';
+        imagerotate.style.display = 'none';
         indextable.style.display = 'none';
         mobileinfo.style.display = 'none';
         tickermobile.style.display = 'none';
@@ -244,44 +256,22 @@ const quoteblock = document.getElementById('rotate-quote');
           indextable.style.display = 'block';
           mobileinfo.style.display = 'block';
           tickermobile.style.display = 'block';
-        
+          clickState=0;
       } 
-      else if (clickState == 5 ) {
-        // Do something...
-        // then reset clickState for the next go round
-   
-      console.log(clickState)
-      globecanvas.style.display = 'none';
-        imagerotate.style.display = 'none';
-        indextable.style.display = 'none';
-        mobileinfo.style.display = 'none';
-        tickermobile.style.display = 'none';
-        quoteblock.style.display = 'block';
-    } 
-    else if (clickState == 6 ) {
-      // Do something...
-      // then reset clickState for the next go round
- 
-    console.log(clickState)
-    globecanvas.style.display = 'none';
-      imagerotate.style.display = 'none';
-      indextable.style.display = 'block';
-      mobileinfo.style.display = 'block';
-      tickermobile.style.display = 'block';
-      quoteblock.style.display = 'none';
-      clickState=0;
-  } 
 
   }
 // IMAGEROTATE MOBILE
 let imagesmoblie = ['/images/cotty-6.jpg', '/images/friendshipandsoccer.png', '/images/barca_vs_real.jpg', '/images/liberation_of_aunt_Jemima.JPG', '/images/web-off.jpg', '/images/notting-hill-carni-1992.jpg', '/images/understand-computer.png', '/images/kobe-smile.jpg', '/images/mike-janet.jpg', '/images/prince_jumper.png'];
-
+let imageorientation = ['rotate(90deg)'];
 
 let imagemobile = document.getElementById('image-rotate-mobile');
 
 setInterval(function (){
   let random = Math.floor(Math.random() * 10);
   imagemobile.src = images[random];
+  imagemobile.style.transformOrigin = 'center';
+
+
 },
 1500)
 
@@ -318,10 +308,11 @@ const mobilefooter = document.getElementById('mobile-footer');
     }
 
     else if (clickStatemobile ==1 ) {
-      midswitch.style.background = '#634627;';
-      midswitch.style.backgroundSize = '0';
+      midswitch.style.background = 'radial-gradient(2px 2px, white, blue)';
+      midswitch.style.backgroundSize = '4px 4px';
   console.log(clickStatemobile)
-  globecanvas.style.display = 'inline-block';
+  globecanvas.style.display = 'none';
+  imagerotate.style.display = 'block';
   indextable.style.display = 'none';
   mobileinfo.style.display = 'none';
   tickermobile.style.display = 'none';
@@ -332,6 +323,7 @@ const mobilefooter = document.getElementById('mobile-footer');
       midswitch.style.backgroundSize = '0';
  console.log(clickStatemobile)
   globecanvas.style.display = 'none';
+  imagerotate.style.display = 'none';
   indextable.style.display = 'block';
   mobileinfo.style.display = 'block';
   tickermobile.style.display = 'block';
@@ -340,11 +332,11 @@ globecanvas.style.overflow = 'auto';
     } else if (clickStatemobile == 3 ) {
 
       console.log(clickStatemobile)
-      globecanvas.style.display = 'none';
-      imagerotate.style.display = 'block';
-
-      midswitch.style.background = 'radial-gradient(2px 2px, white, blue)';
-      midswitch.style.backgroundSize = '4px 4px';
+      globecanvas.style.display = 'inline-block';
+      imagerotate.style.display = 'none';
+      
+      midswitch.style.background = '#634627;';
+      midswitch.style.backgroundSize = '0';
       indextable.style.display = 'none';
       mobileinfo.style.display = 'none';
       mobilefooter.style.display = 'none';
