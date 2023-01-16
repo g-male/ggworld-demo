@@ -204,7 +204,7 @@ $(function() {
       clickState++; 
    
       const indextable = document.getElementById('index-table');
-  
+  const circleglow = document.getElementById('circle-glow');
       const globecanvas = document.getElementById('rotatingGlobe');
     const imagerotate = document.getElementById('select-images');
 const mobileinfo = document.getElementById('mobile-info');
@@ -224,7 +224,8 @@ const tickermobile = document.getElementById('ticker-mobile');
       else if (clickState ==1 ) {
 
     console.log(clickState)
-    globecanvas.style.display = 'inline-block';
+    globecanvas.style.display = 'none';
+    circleglow.style.display = 'none';
     imagerotate.style.display = 'block';
     leftside.style.overflowY = 'hidden'
     indextable.style.display = 'none';
@@ -237,6 +238,7 @@ const tickermobile = document.getElementById('ticker-mobile');
     imagerotate.style.display = 'none';
     indextable.style.display = 'block';
     mobileinfo.style.display = 'block';
+    circleglow.style.display = 'block';
     tickermobile.style.display = 'block';
       } else if (clickState == 3 ) {
 
