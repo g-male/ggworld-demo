@@ -1,3 +1,17 @@
+document.querySelector("body").addEventListener("mousemove", eyeball);
+
+function eyeball() {
+  const eye = document.querySelectorAll(".eyes");
+  eye.forEach(function (eye) {
+    let x = eye.getBoundingClientRect().left + eye.clientWidth / 2;
+    let y = eye.getBoundingClientRect().top + eye.clientHeight / 2;
+
+    let radian = Math.atan2(event.pageX - x, event.pageY - y);
+    let rotate = radian * (180 / Math.PI) * -1 + 270;
+    eye.style.transform = "rotate(" + rotate + "deg)";
+  });
+}
+
 
 var toggler = document.getElementsByClassName("caret");
 var i;
@@ -205,6 +219,7 @@ $(function() {
    
       const indextable = document.getElementById('index-table');
   const circleglow = document.getElementById('circle-glow');
+  const eyes = document.getElementById('eye-control');
       const globecanvas = document.getElementById('rotatingGlobe');
     const imagerotate = document.getElementById('select-images');
 const mobileinfo = document.getElementById('mobile-info');
@@ -238,12 +253,13 @@ const tickermobile = document.getElementById('ticker-mobile');
     imagerotate.style.display = 'none';
     indextable.style.display = 'block';
     mobileinfo.style.display = 'block';
-    circleglow.style.display = 'block';
+   
     tickermobile.style.display = 'block';
       } else if (clickState == 3 ) {
 
         console.log(clickState)
         globecanvas.style.display = 'inline-block';
+        eyes.style.display = 'none';
         imagerotate.style.display = 'none';
         indextable.style.display = 'none';
         mobileinfo.style.display = 'none';
@@ -251,7 +267,7 @@ const tickermobile = document.getElementById('ticker-mobile');
       } else if (clickState == 4 ) {
           // Do something...
           // then reset clickState for the next go round
-     
+          eyes.style.display = 'flex';
         console.log(clickState)
         globecanvas.style.display = 'none';
           imagerotate.style.display = 'none';

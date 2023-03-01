@@ -31,6 +31,11 @@
          <div id="select-images"><img id="image-rotate" src=""> <br> <a class="tumblr-link">cameraroll.exchange</a> </div>
          <div class="worldbuilding" id="rotate-quote"> <a id="quoteblock"> </a>
   </div>
+
+  <div id="eye-control" class="container-eyes">
+    <div class="eyes"></div>
+    <div class="eyes"></div>
+  </div>
   <div id="circle-glow" class="inner">
     
   </div>
@@ -40,7 +45,7 @@
           <div id="outer-carets"> 
             
   <ul id="myUL">
-    <li><span class="caret">Index</span>
+    <li id="work-index" class="caret-entry"><span class="caret" >Work Index</span>
       <ul class="nested">
         <table id="indexTable" class="tablesorter" style="width:100%">
           <thead>
@@ -53,24 +58,26 @@
           </tr>
         </thead>
       <tbody>
-        <tr class="writing" onclick='loadHtml("right" , "abicsi.html")' style='cursor: pointer;'>
+       <!-- <tr class="writing" onclick='loadHtml("right" , "abicsi.html")' style='cursor: pointer;'>
            
           <td class="title"><a class="preview">Pilot</a> <img class="hide" src="https://whenallmyfriendslogoff.blog/wp-content/uploads/2022/11/33E8FF05-97A2-4BAD-9F80-F8323C0A201A-500x139.png"></th>
           <td class="styletype"> <a class="type Blog">Blog</a></td>  
           <td class="year">2022</td>
+        </tr> -->
+        <tr class="web" onclick='loadHtml("left" , "ecco-ossington.html")' style='cursor: pointer;'>
+      
+          <td class="title"><a class="preview">Ecco Ossington Landing Page </a><img class="hide" src="/images/ecco-explore.png"></td>
+          <td class="styletype"> <a class="type Web">Web </a></td>  
+          <td class="year"><a class="preview">2023</a></td>
         </tr>
+              <tr class="web" onclick='loadHtml("left" , "")' style='cursor: pointer;'>
 
-        <tr class="web" onclick='loadHtml("left" , "personal-website.html")' style='cursor: pointer;'>
-
-          <td class="title"><a class="preview">Personal Website</a> <img class="hide" src="/images/pleasurecap_700.png"></td>
-          <td class="styletype"> <a class="type Web">Web  </a>
-            </td>  
+                <td class="title"><a class="preview">g-g.world</a> </td>
+                <td class="styletype"> <a class="type Web">Web  </a></td> 
+                <td class="year">2023</td>
          
-          <td class="year">2022</td>
-         
-        </tr>
+              </tr>
   
-        <div class="hide">this shows when hover </div>
               <tr class="web" onclick='loadHtml("left" , "abicsi.html")' style='cursor: pointer;'>
       
                 <td class="title"><a class="preview">Abicsi </a><img class="hide" src="/images/abicsimain.png"></td>
@@ -79,7 +86,7 @@
               </tr>
               <tr class="web" onclick='loadHtml("right" , "blog-website.html")' style='cursor: pointer;'>
              
-                <td class="title">Wordpress Blog</th>
+                <td class="title"><a class="preview">whenallmyfriendslogoff.blog</a><img class="hide" src="/images/blogsite_dsk.png"> </td>
                 <td class="styletype"> <a class="type Web">Web </a></td>  
                 <td class="year">2022</td>
               </tr>
@@ -87,46 +94,46 @@
               
               <tr class="sport" onclick='loadHtml("right" , "painter-pants.html")' style='cursor: pointer;'>
  
-                <td class="title">Painter Pants </td>
+                <td class="title"><a class="preview">Painter Pants</a><img class="hide" src="/images/painter-tags.jpg"></td>
                 <td class="styletype"> <a class="type sport">Sport</a></td>
                 <td class="year">2020</td>
               </tr>
               <tr class="sport" onclick='loadHtml("right" , "sport-website.html")' style='cursor: pointer;'>
           
-                <td class="title">Sport Website </th>
+                <td class="title"><a class="preview"> Sport Website</a><img class="hide" src="/images/Sport-site-archive.jpg"> </td>
                 <td class="styletype"> <a class="type Web">Web </a></td>  
                 <td class="year">2020</td>
               </tr>
               <tr class="sport"  onclick='loadHtml("right" , "dg-ls.html")' style='cursor: pointer;'>
   
-                <td class="title">DG Longsleeve </th>
+                <td class="title"><a class="preview">DG Longsleeve</a><img class="hide" src="/images/dglongsleeve_back_700.webp"> </td>
                 <td class="styletype" > <a class="type sport">Sport</a></td>  
                 <td class="year">2019</td>
               </tr>
 
               <tr class="sport"  onclick='loadHtml("right" , "summer-popup.html")' style='cursor: pointer;'>
 
-                <td class="title">Summer '19 Pop-up </td>
+                <td class="title"><a class="preview"> Summer '19 Collection</a><img class="hide" src="/images/summer-popup.jpg">  </td>
                 <td class="styletype"> <a class="type sport">Sport </a> </td>
                 <td class="year">2019</td>
               </tr>
 
               <tr class="sport" onclick='loadHtml("right" , "sport-socks.html")' style='cursor: pointer;'>
   
-                <td class="title">Sport Socks</th>
+                <td class="title"><a class="preview">Sport Socks</a><img class="hide" src="/images/Sock_packaging.webp"></td>
                 <td class="styletype"> <a class="type sport">Sport </a></td>  
                 <td class="year">2018</td>
               </tr>
 
               <tr class="sport" onclick='loadHtml("right" , "Comfortable-speed.html")' style='cursor: pointer;'>
 
-                <td class="title"><a class="preview">Comfortable Speed </a><img class="hide" src="/images/theoneonls.jpeg"></td>
+                <td class="title"><a class="preview">Comfortable Speed </a><img class="hide" src="/images/col2-sweatsuit-plant.jpg"></td>
                 <td class="styletype"> <a class="type sport preview">Sport </a></td>
                 <td class="year">2018</td>
               </tr>
               <tr class="sport" onclick='loadHtml("right" , "friends-family.html")' style='cursor: pointer;'>
     
-                <td class="title">Friends & Family</td>
+                <td class="title"><a class="preview">Friends & Family</a><img class="hide" src="/images/kidspackage.webp"></td>
                 <td class="styletype"> <a class="type sport">Sport </a></td>
                 <td class="year">2018</td>
               </tr>
@@ -137,31 +144,35 @@
        
       </ul>
     </li>
-    <li><span class="caret">elsewhere</span> 
+    <li id="elsewhere-caret" class="caret-entry"><span class="caret">elsewhere</span> 
 
       <ul class="nested elsewhere">
       <a target="_blank" href="https://github.com/g-male">github</a>,
       <a target="_blank" href="https://www.instagram.com/skinny.reggae/">instagram</a>,
-    <a target="_blank" href="https://www.are.na/skinny-reggae">are.na</a> 
-    </ul>
-      </li>
-<li><span class="caret">Acknowledgements</span>
-<ul class="nested ack">
-<li class="ack-li">
- <p> This website was designed & coded by greg gordon.
-  <br>Feel free to share any  materials you find here as long as you properly attribute all the people cited & link back to this website.
+      <a target="_blank" href="https://www.are.na/skinny-reggae">are.na</a> 
+      </ul>
+    </li>
+    <li id="acknowledgements-caret" class="caret-entry"><span class="caret">Acknowledgements</span>
+      <ul class="nested ack">
+        <p> This website was built by Greg Gordon.
+      <br>Feel free to share any  materials you find here as long as you properly attribute all the people cited & link back to this website.
 
-  <br> last updated 12-07-2022. </p></li>
+      <br> last updated 02-27-2023.
+      <br> Inspired by <a target="_blank" href="https://gossipsweb.net/">Gossip Web</a>
+       </p>
+       
+      </ul>
+    </li>
 </ul>
-</li>
-  </ul>
+
   <div class="blurb-preview">?</div>
   <div class="blurb">  <a> Hi, Hello <br> 
-    I'm a Web Designer and Developer providing solutions for people & businesses. 
-       
+    Greg is a multidisciplinary artist who focuses on building web solutions for people and businesses.
+   
+      <br>  gregoryhgordon@gmail.com
             
      <span  class="blurb-more" style="text-align: right;">
-         <br>gregoryhgordon@gmail.com 
+         
           </span> 
            </a>  </div>
 </div>
@@ -238,20 +249,27 @@
                     </tr>
                   </thead>
                 <tbody>
-                  <tr class="writing" onclick='loadHtml("right" , "abicsi.html")' style='cursor: pointer;'>
+                  <!--  <tr class="writing" onclick='loadHtml("right" , "abicsi.html")' style='cursor: pointer;'>
                        
                     <td class="title">Pilot</th>
                     <td class="styletype"> <a class="type Blog">Blog </a></td>  
                     <td class="year">2022</td>
-                  </tr>
-              
+                  </tr>   -->
                   <tr class="web"  style='cursor: pointer;'>
       
-                    <td class="title"><a href="/templates/personal-website.html"> Personal Website </a></th>
-                    <td class="styletype"> <a class="type Web" href="/templates/personal-website.html">Web </a></td>  
-                    <td class="year"> <a href="/templates/personal-website.html">2022 </a></td>
+                    <td class="title"><a href="/templates/ecco-ossington.html"> Ecco Landing Page</a></th>
+                    <td class="styletype"> <a class="type Web" href="/templates/ecco-ossington.html">Web </a></td>  
+                    <td class="year"> <a href="/templates/ecco-ossington.html">2023 </a></td>
                   </tr>
            
+                  <tr class="web"  style='cursor: pointer;'>
+      
+                    <td class="title"><a > g-g.world</a></th>
+                    <td class="styletype"> <a class="type Web">Web </a></td>  
+                    <td class="year"> <a >2023 </a></td>
+                  </tr>
+           
+            
                 
                         <tr class="web"  style='cursor: pointer;'>
               
@@ -261,7 +279,7 @@
                         </tr>
                         <tr class="web" style='cursor: pointer;'>
               
-                          <td class="title"> <a href="/templates/blog-website.html">Wordpress Blog </a></th>
+                          <td class="title"> <a href="/templates/blog-website.html">whenallmyfriendslogoff.blog </a></th>
                           <td class="styletype"> <a class="type Web" href="/templates/blog-website.html">Web</a></td>  
                           <td class="year"><a href="/templates/blog-website.html"> 2022</a></td>
                         </tr>
@@ -288,7 +306,7 @@
             
                         <tr class="sport"   style='cursor: pointer;'>
                         
-                          <td class="title"> <a href="/templates/summer-popup.html">Summer '19 Pop-up</a> </td>
+                          <td class="title"> <a href="/templates/summer-popup.html">Summer '19 Collection</a> </td>
                           <td class="styletype"> <a href="/templates/summer-popup.html" class="type sport"> Sport</a></td>
                           <td class="year"><a href="/templates/summer-popup.html">2019</a></td>
                         </tr>
@@ -319,11 +337,11 @@
                       </tbody>
                       </table>
                       <div class="dropdown"> 
-                        <label class="showMore" for="_3">elsewhere</label>
+                        <label class="showMore" for="_3">Elsewhere</label>
                           <input id="_3" type="checkbox">
                           <div class="moreContent" style="font-size:5vw; "> 
                           
-                            <a target="_blank" href="https://github.com/g-male">github</a>,   <a target="_blank" href="https://www.instagram.com/skinny.reggae/">instagram</a>, <a target="_blank" href="https://www.are.na/skinny-reggae">are.na</a>, <a href="#home">resume</a>
+                            <a target="_blank" href="https://github.com/g-male">github</a>,   <a target="_blank" href="https://www.instagram.com/skinny.reggae/">instagram</a>, <a target="_blank" href="https://www.are.na/skinny-reggae">are.na</a></a>
                           
                           </div> 
           
@@ -334,10 +352,12 @@
                         <label class="showMore" for="_4">Acknowledgements</label>
                           <input id="_4" type="checkbox">
                           <div class="moreContent" style="font-size:5vw; "> 
-                            <p> This website was designed & coded by greg gordon.
+                            <p> This website was built by Greg Gordon.
                               <br>Feel free to share any  materials you find here as long as you properly attribute all the people cited & link back to this website.
-                            
-                              <br> last updated 01-01-2023. </p>
+                        
+                              <br> last updated 02-27-2023.
+                              <br> Inspired by <a target="_blank" href="https://gossipsweb.net/">Gossip Web</a>
+                               </p>
                           </div> 
           
           
@@ -351,7 +371,7 @@
                   <div class="blurb-more" > 
                     <a>Based in Toronto & Online &#128205
                     </a>
-               <br>  <br>  <a href>  him@greg-g[dot]world </a> </div>
+               <br> <a href>  gregoryhgordon@gmail.com</a> </div>
                  </div>   
                 </div>
             

@@ -35,9 +35,12 @@ display: block;
 .close-x{
 float: right;
 padding-right: 1em;
+margin-top: 1rem;
 font-size: 4rem;
-
-
+width: 120px;
+}
+.close-x img{
+    width: 100%;
 }
 .close-x a{
     text-decoration: none;
@@ -138,11 +141,15 @@ font-style: italic;
     width: 33.333%;
     display: inline-block;
     float: left;
-   
-  
-
 }
-
+.text-desc li{
+  list-style-type: circle;
+   list-style: circle;
+   margin-bottom: 1rem;
+  }
+  .text-desc{
+    margin: 2%;
+  }
 .text-box{
     width: 100%;
     padding-bottom: 5%;
@@ -177,7 +184,7 @@ font-style: italic;
 
 .desc-text{
    
-    padding: 5%;
+    padding: 3%;
     display: block;
     width: 100%;
 }
@@ -234,6 +241,9 @@ font-style: italic;
   .text-desc p{
       font-size: 1rem;
   }
+  .text-desc li{
+    list-style-type: disc;
+  }
 .text-box{
     padding-bottom: 5%;
 }
@@ -266,6 +276,10 @@ display: none;
 }
 .close-x{
     padding-right: 0;
+    width: 50px;
+}
+iframe{
+    width: 100%;
 }
     .oval-back.mobile{
         display: none;
